@@ -1,0 +1,130 @@
+/* Estilos para o cabeçalho */
+.header {
+  background-color: #24e1b8;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+  border-radius: 8px;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav button {
+  margin-right: 10px; /* Espaçamento entre os botões */
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.header-nav button:hover {
+  background-color: #1bb98f;
+  border-color: #1bb98f;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaçamento entre imagem, ícone e botões */
+}
+
+.header-user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover; /* Garante que a imagem não fique deformada */
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-user img:hover {
+  transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.header-user i {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-user i:hover {
+  color: #1bb98f; /* Mudança de cor no ícone ao passar o mouse */
+}
+
+.header-user button {
+  padding: 8px 15px;
+  background-color: #19c295;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header-user button:hover {
+  background-color: #495158;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Para telas de 768px ou menores, ajuste o layout */
+  .header {
+    flex-direction: column; /* Alinha os itens verticalmente */
+    padding: 10px 15px;
+  }
+
+  .header-nav {
+    margin-top: 15px;
+    width: 100%;
+    justify-content: space-around; 
+  }
+
+  .header-user {
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+
+  .header-nav button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .header-user img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header-user button {
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Para telas de 480px ou menores (smartphones pequenos) */
+  .header {
+    padding: 8px 10px;
+  }
+
+  .header-nav button {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .header-user img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header-user button {
+    font-size: 12px;
+  }
+}

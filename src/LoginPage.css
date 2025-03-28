@@ -1,0 +1,10 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    background-color: pink;
+}
+.active.btn.btn-block{
+    background-color: rgb(253, 93, 120);
+}
